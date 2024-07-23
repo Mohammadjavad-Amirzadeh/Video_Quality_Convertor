@@ -31,7 +31,6 @@ def convert():
         '''
         # The path where uploaded files will be stored
         UPLOAD_FOLDER = './changed'#
-        #UPLOAD_FOLDER = '/home/mohammadjavad/Desktop/video_converter_project/changed'
         if os.path.exists(UPLOAD_FOLDER):
             shutil.rmtree(UPLOAD_FOLDER)
         
