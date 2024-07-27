@@ -1,11 +1,9 @@
 version: '3.8'
+
 services:
-  web:
-    build: .
-    volumes:
-      - clip_convertor:/app
+  vids:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:5000"
-
-volumes:
-  clip_convertor:
